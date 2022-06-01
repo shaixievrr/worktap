@@ -52,10 +52,6 @@ ul {
     justify-content: space-between;
 }
 
-.header__logo {
-    margin-right: 60px;
-}
-
 .nav-list {
     display: flex;
     align-items: center;
