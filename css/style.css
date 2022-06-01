@@ -1,0 +1,252 @@
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #F7F6FF;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+
+/* ----------header---------- */
+
+.header {
+    padding-top: 50px;
+    margin-bottom: 68px;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    margin-right: 60px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list__item {
+    margin-right: 40px;
+}
+
+.nav-list__item a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.header__authorization {
+    display: flex;
+    flex-direction: row;
+}
+
+.auth-menu__reg-link {
+    width: 171px;
+    height: 40px;
+    padding: 10px 30px;
+    background: #F2F0FE;
+    border-radius: 50px;
+    margin-right: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1DBF73;
+    text-align: center;
+}
+
+.auth-menu__login-link {
+    width: 113px;
+    height: 40px;
+    padding: 10px 30px;
+    background: #1DBF73;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F6FAFD;
+}
+
+
+/* ----------first-screen---------- */
+
+.first-screen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first-screen__wrapper-content {
+    width: 596px;
+}
+
+.first-screen__heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.05em;
+    color: #222222;
+    margin-bottom: 30px;
+}
+
+mark {
+    color: #1DBF73;
+    background: none;
+}
+
+.first-screen__description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222222;
+    margin-bottom: 50px;
+    width: 532px;
+}
+
+.main-form {
+    width: 532px;
+    position: relative;
+}
+
+.main-form__searching {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.main-form__searching-text {
+    width: 532px;
+    height: 60px;
+    background: #F2F0FE;
+    border-radius: 50px;
+    border: none;
+    padding-left: 19px;
+}
+
+.main-form__searching-text::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #656084;
+}
+
+.main-form__searching-button {
+    position: absolute;
+    right: 0;
+    width: 154px;
+    height: 60px;
+    background: #FBA457;
+    border: 3px solid #F2F0FE;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F6FAFD;
+}
+
+.main-filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-style: none;
+}
+
+.main-filter__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #222222;
+    margin-bottom: 30px;
+}
+
+
+/* .main-filter__checkbox {
+    padding: 10px 20px;
+    border: 1px solid #F2F0FE;
+    border-radius: 50px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+} */
+
+.main-filter__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.main-filter__checkbox:checked+label {
+    color: #1DBF73;
+    font-weight: 600;
+    border-color: #1DBF73;
+}
+
+.main-filter__label {
+    display: block;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid #F2F0FE;
+    border-radius: 50px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222222;
+}
+
+.main-filter__button {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    padding: 10px 20px;
+    border: 1px solid #FBA457;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FBA457;
+    background: none;
+}
