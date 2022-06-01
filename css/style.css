@@ -153,6 +153,7 @@ mark {
     background: #F2F0FE;
     border-radius: 50px;
     border: none;
+    outline:none;
     padding-left: 19px;
 }
 
