@@ -50,66 +50,274 @@
     </header>
 
     <main>
-        <div class="container">
 
-            <section class="first-screen">
-                <div class="first-screen__wrapper-content">
-                    <h1 class="first-screen__heading">Покупайте фриланс услуги <mark>в два клика</mark></h1>
-                    <p class="first-screen__description">Ворк — единица работы продавца, которую можно купить как товар в магазине </p>
-                    <form class="first-screen__form main-form" placeholder="Что нужно сделать?">
-                        <div class="main-form__searching">
-                            <input class="main-form__searching-text" type="text" placeholder="Что нужно сделать?">
-                            <input class="main-form__searching-button" type="button" value="Найти">
-                        </div>
-                        <fieldset class="main-form__filter main-filter">
-                            <legend class="main-filter__title">Выберите рубрику чтобы начать</legend>
-
-                            <div class="main-filter__text">
-                                <input class="main-filter__checkbox" type="checkbox" id="text" name="text">
-                                <label class="main-filter__label" for="text">Тексты и переводы</label>
+        <section class="first-screen">
+            <div class="container">
+                <div class="first-screen__main-wrapper">
+                    <div class="first-screen__wrapper-content">
+                        <h1 class="first-screen__heading">Покупайте фриланс услуги <mark>в два клика</mark></h1>
+                        <p class="first-screen__description">Ворк — единица работы продавца, которую можно купить как товар в магазине </p>
+                        <form class="first-screen__form main-form" placeholder="Что нужно сделать?">
+                            <div class="main-form__searching">
+                                <input class="main-form__searching-text" type="text" placeholder="Что нужно сделать?">
+                                <input class="main-form__searching-button" type="button" value="Найти">
                             </div>
+                            <fieldset class="main-form__filter main-filter">
+                                <legend class="main-filter__title">Выберите рубрику чтобы начать</legend>
 
-                            <div class="main-filter__development">
-                                <input class="main-filter__checkbox" type="checkbox" id="development" name="development">
-                                <label class="main-filter__label" for="development">Разработка</label>
-                            </div>
+                                <div class="main-filter__text">
+                                    <input class="main-filter__checkbox" type="checkbox" id="text" name="text">
+                                    <label class="main-filter__label" for="text">Тексты и переводы</label>
+                                </div>
 
-                            <div class="main-filter__design">
-                                <input class="main-filter__checkbox" type="checkbox" id="design" name="design">
-                                <label class="main-filter__label" for="design">Дизайн</label>
-                            </div>
+                                <div class="main-filter__development">
+                                    <input class="main-filter__checkbox" type="checkbox" id="development" name="development">
+                                    <label class="main-filter__label" for="development">Разработка</label>
+                                </div>
 
-                            <div class="main-filter__va-editing">
-                                <input class="main-filter__checkbox" type="checkbox" id="va-editing" name="va-editing">
-                                <label class="main-filter__label" for="va-editing">Аудио, видео монтаж</label>
-                            </div>
+                                <div class="main-filter__design">
+                                    <input class="main-filter__checkbox" type="checkbox" id="design" name="design">
+                                    <label class="main-filter__label" for="design">Дизайн</label>
+                                </div>
 
-                            <div class="main-filter__seo">
-                                <input class="main-filter__checkbox" type="checkbox" id="SEO" name="SEO">
-                                <label class="main-filter__label" for="SEO">SEO и оптимизация</label>
-                            </div>
+                                <div class="main-filter__va-editing">
+                                    <input class="main-filter__checkbox" type="checkbox" id="va-editing" name="va-editing">
+                                    <label class="main-filter__label" for="va-editing">Аудио, видео монтаж</label>
+                                </div>
 
-                            <div class="main-filter__business">
-                                <input class="main-filter__checkbox" type="checkbox" id="business" name="business">
-                                <label class="main-filter__label" for="business">Бизнес и жизнь</label>
-                            </div>
+                                <div class="main-filter__seo">
+                                    <input class="main-filter__checkbox" type="checkbox" id="SEO" name="SEO">
+                                    <label class="main-filter__label" for="SEO">SEO и оптимизация</label>
+                                </div>
 
-                            <div class="main-filter__social">
-                                <input class="main-filter__checkbox" type="checkbox" id="social" name="social">
-                                <label class="main-filter__label" for="social">Соцсети и реклама</label>
-                            </div>
+                                <div class="main-filter__business">
+                                    <input class="main-filter__checkbox" type="checkbox" id="business" name="business">
+                                    <label class="main-filter__label" for="business">Бизнес и жизнь</label>
+                                </div>
 
-                            <input class="main-filter__button" type="button" value="Все категории">
+                                <div class="main-filter__social">
+                                    <input class="main-filter__checkbox" type="checkbox" id="social" name="social">
+                                    <label class="main-filter__label" for="social">Соцсети и реклама</label>
+                                </div>
 
-                        </fieldset>
-                    </form>
+                                <input class="main-filter__button" type="button" value="Все категории">
+
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="first-screen__wrapper-image">
+                        <img src="images/img-main.png" alt="MainPhoto">
+                    </div>
                 </div>
-                <div class="first-screen__wrapper-image">
-                    <img src="images/img-main.png" alt="MainPhoto">
-                </div>
-            </section>
+            </div>
+        </section>
 
-        </div>
+        <section class="works">
+            <div class="container">
+
+                <h2 class="works__heading">Актуальные ворки</h2>
+
+                <div class="works__wrapper">
+
+                    <div class="works__item works-card">
+                        <header class="works-card__header">
+                            <img class="works-card__image" src="images/img-works1.png" alt="Photo">
+                            <h3 class="works-card__heading">Сделать дизайн интернет-магазина</h3>
+                        </header>
+                        <p class="works-card__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...
+                        </p>
+                        <footer class="works-card__footer">
+                            <a class="works-card__button" href="">Посмотреть</a>
+                        </footer>
+                    </div>
+
+                    <div class="works__item works-card">
+                        <header class="works-card__header">
+                            <img class="works-card__image" src="images/img-works2.png" alt="Photo">
+                            <h3 class="works-card__heading">Вёрстка landing page</h3>
+                        </header>
+                        <p class="works-card__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...
+                        </p>
+                        <footer class="works-card__footer">
+                            <a class="works-card__button" href="">Посмотреть</a>
+                        </footer>
+                    </div>
+
+                    <div class="works__item works-card">
+                        <header class="works-card__header">
+                            <img class="works-card__image" src="images/img-works3.png" alt="Photo">
+                            <h3 class="works-card__heading">Сделать дизайн сайта-каталога и посадить на какой нибудь ко...</h3>
+                        </header>
+                        <p class="works-card__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...
+                        </p>
+                        <footer class="works-card__footer">
+                            <a class="works-card__button" href="">Посмотреть</a>
+                        </footer>
+                    </div>
+
+                    <div class="works__item works-card">
+                        <header class="works-card__header">
+                            <img class="works-card__image" src="images/img-works4.png" alt="Photo">
+                            <h3 class="works-card__heading">Продвижение instagram </h3>
+                        </header>
+                        <p class="works-card__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...
+                        </p>
+                        <footer class="works-card__footer">
+                            <a class="works-card__button" href="">Посмотреть</a>
+                        </footer>
+                    </div>
+
+                    <div class="works__item works-card">
+                        <header class="works-card__header">
+                            <img class="works-card__image" src="images/img-works5.png" alt="Photo">
+                            <h3 class="works-card__heading">Срочно! Нужен веб дизайнер!</h3>
+                        </header>
+                        <p class="works-card__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...
+                        </p>
+                        <footer class="works-card__footer">
+                            <a class="works-card__button" href="">Посмотреть</a>
+                        </footer>
+                    </div>
+
+
+                    <a class="works-card works-card__button-all" href="">Смотреть все</a>
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="freelancers">
+            <div class="container">
+
+                <h2 class="freelancers__heading">Топ фрилансеров</h2>
+
+                <div class="freelancers__wrapper">
+
+                    <div class="freelancers__item freelancers-card">
+                        <header class="freelancers-card__header">
+                            <img class="freelancers-card__image" src="images/img-top-freelancer1.png" width="150px" alt="Freelancer's photo">
+                            <div class="freelancer-card__info">
+                                <p class="freelancers-card__name">Марина Королёва</p>
+                                <p class="freelancers-card__speciality">Разработчик PHP</p>
+                                <p class="freelancers-card__projects-done">Выполено проектов: 65</p>
+                                <div class="freelancers-card__rank rank">
+                                    <img class="rank__star" src="images/img-star.svg" alt="+">
+                                    <img class="rank__star" src="images/img-star.svg" alt="+">
+                                    <img class="rank__star" src="images/img-star.svg" alt="+">
+                                    <img class="rank__star" src="images/img-star.svg" alt="+">
+                                    <img class="rank__star" src="images/img-empty_star.svg" alt="+-">
+                                </div>
+                            </div>
+                        </header>
+
+                        <footer class="freelancers-card__footer">
+                            <a class="freelancers-card__button" href="">Написать</a>
+                        </footer>
+                    </div>
+
+                    <div class="freelancers__item freelancers-card">
+                        <header class="freelancers-card__header">
+                            <img class="freelancers-card__image" src="images/img-top-freelancer2.png" width="150px" alt="Freelancer's photo">
+                            <div class="freelancer-card__info">
+                                <p class="freelancers-card__name">Семён Сергеев</p>
+                                <p class="freelancers-card__speciality">Копирайтер</p>
+                                <p class="freelancers-card__projects-done">Выполено проектов: 104</p>
+                                <div class="freelancers-card__rank rank">
+                                    <img class="rank__star" src="images/img-star.svg" alt="+">
+                                    <img class="rank__star" src="images/img-star.svg" alt="+">
+                                    <img class="rank__star" src="images/img-star.svg" alt="+">
+                                    <img class="rank__star" src="images/img-star.svg" alt="+">
+                                    <img class="rank__star" src="images/img-empty_star.svg" alt="+-">
+                                </div>
+                            </div>
+                        </header>
+
+                        <footer class="freelancers-card__footer">
+                            <a class="freelancers-card__button" href="">Написать</a>
+                        </footer>
+                    </div>
+
+                    <div class="freelancers__item freelancers-card">
+                        <header class="freelancers-card__header">
+                            <img class="freelancers-card__image" src="images/img-top-freelancer3.png" width="150px" alt="Freelancer's photo">
+                            <div class="freelancer-card__info">
+                                <p class="freelancers-card__name">Ангелина Сорокина</p>
+                                <p class="freelancers-card__speciality">Дизайнер сайтов</p>
+                                <p class="freelancers-card__projects-done">Выполено проектов: 25</p>
+                                <div class="freelancers-card__rank rank">
+                                    <img class="rank__star" src="images/img-star.svg" alt="+">
+                                    <img class="rank__star" src="images/img-star.svg" alt="+">
+                                    <img class="rank__star" src="images/img-star.svg" alt="+">
+                                    <img class="rank__star" src="images/img-star.svg" alt="+">
+                                    <img class="rank__star" src="images/img-star.svg" alt="+">
+                                </div>
+                            </div>
+                        </header>
+
+                        <footer class="freelancers-card__footer">
+                            <a class="freelancers-card__button" href="">Написать</a>
+                        </footer>
+                    </div>
+
+                    <div class="freelancers__item freelancers-card">
+                        <header class="freelancers-card__header">
+                            <img class="freelancers-card__image" src="images/img-top-freelancer4.png" width="150px" alt="Freelancer's photo">
+                            <div class="freelancer-card__info">
+                                <p class="freelancers-card__name">Никита Зайцев</p>
+                                <p class="freelancers-card__speciality">Маркетолог</p>
+                                <p class="freelancers-card__projects-done">Выполено проектов: 144</p>
+                                <div class="freelancers-card__rank rank">
+                                    <img class="rank__star" src="images/img-star.svg" alt="+">
+                                    <img class="rank__star" src="images/img-star.svg" alt="+">
+                                    <img class="rank__star" src="images/img-star.svg" alt="+">
+                                    <img class="rank__star" src="images/img-star.svg" alt="+">
+                                    <img class="rank__star" src="images/img-empty_star.svg" alt="+-">
+                                </div>
+                            </div>
+                        </header>
+
+                        <footer class="freelancers-card__footer">
+                            <a class="freelancers-card__button" href="">Написать</a>
+                        </footer>
+                    </div>
+
+                    <div class="freelancers__item freelancers-card">
+                        <header class="freelancers-card__header">
+                            <img class="freelancers-card__image" src="images/img-top-freelancer5.png" width="150px" alt="Freelancer's photo">
+                            <div class="freelancer-card__info">
+                                <p class="freelancers-card__name">Наталья Захарова</p>
+                                <p class="freelancers-card__speciality">Motion дизайнер </p>
+                                <p class="freelancers-card__projects-done">Выполено проектов: 71</p>
+                                <div class="freelancers-card__rank rank">
+                                    <img class="rank__star" src="images/img-star.svg" alt="+">
+                                    <img class="rank__star" src="images/img-star.svg" alt="+">
+                                    <img class="rank__star" src="images/img-star.svg" alt="+">
+                                    <img class="rank__star" src="images/img-star.svg" alt="+">
+                                    <img class="rank__star" src="images/img-star.svg" alt="+">
+                                </div>
+                            </div>
+                        </header>
+
+                        <footer class="freelancers-card__footer">
+                            <a class="freelancers-card__button" href="">Написать</a>
+                        </footer>
+                    </div>
+
+                    <a class="freelancers-card freelancers-card__button-all" href="">Посмотреть всех ТОП фрилансеров</a>
+
+                </div>
+
+            </div>
+        </section>
+
+
     </main>
 
 </body>

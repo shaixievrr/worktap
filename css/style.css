@@ -17,7 +17,6 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: #F7F6FF;
 }
 
 a {
@@ -43,7 +42,8 @@ ul {
 
 .header {
     padding-top: 50px;
-    margin-bottom: 68px;
+    padding-bottom: 68px;
+    background: #F7F6FF;
 }
 
 .header__wrapper {
@@ -103,6 +103,12 @@ ul {
 /* ----------first-screen---------- */
 
 .first-screen {
+    background: #F7F6FF;
+    padding-bottom: 127px;
+    margin-bottom: 109px;
+}
+
+.first-screen__main-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -236,4 +242,156 @@ mark {
     line-height: 17px;
     color: #FBA457;
     background: none;
+}
+
+
+/* ----------works---------- */
+
+.works {
+    margin-bottom: 100px;
+}
+
+.works-card,
+.freelancers-card {
+    width: 420px;
+    min-height: 270px;
+    padding: 20px;
+    border: 1px solid #F2F0FE;
+    border-radius: 20px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.works-card:hover .works-card__button,
+.freelancers-card:hover .freelancers-card__button {
+    background: #1DBF73;
+    color: #F6FAFD;
+}
+
+.works-card:hover,
+.freelancers-card:hover {
+    box-shadow: 0px 16px 16px rgba(34, 34, 34, 0.04);
+    transform: translateY(-5px);
+}
+
+.works__wrapper .works-card:nth-child(3n+3),
+.freelancers__wrapper .freelancers-card:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.works__heading,
+.freelancers__heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
+    margin-bottom: 48px;
+}
+
+.works__wrapper,
+.freelancers__wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.works-card__header,
+.freelancers-card__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.works-card__image {
+    margin-right: 20px;
+}
+
+.works-card__heading,
+.freelancers-card__heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #222222;
+}
+
+.works-card__description,
+.freelancers-card__description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222222;
+    margin-bottom: 30px;
+}
+
+.works-card__button,
+.freelancers-card__button {
+    display: block;
+    width: 380px;
+    height: 41px;
+    padding-top: 12px;
+    border: 1px solid #1DBF73;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #1DBF73;
+}
+
+.works-card__button-all,
+.freelancers-card__button-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: none;
+    background: #F2F0FE;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1DBF73;
+}
+
+.freelancers {
+    margin: 100px;
+}
+
+.freelancers-card__image {
+    margin-right: 32px;
+}
+
+.freelancer-card__info {
+    text-align: left;
+}
+
+.freelancers-card__name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #222222;
+    margin-bottom: 12px;
+}
+
+.freelancers-card__speciality {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FBA457;
+    margin-bottom: 10px;
+}
+
+.freelancers-card__projects-done {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222222;
+    margin-bottom: 10px;
 }
