@@ -159,7 +159,7 @@ mark {
     background: #F2F0FE;
     border-radius: 50px;
     border: none;
-    outline:none;
+    outline: none;
     padding-left: 19px;
 }
 
@@ -362,8 +362,36 @@ mark {
     margin: 100px;
 }
 
+.freelancers-card__header {
+    position: relative;
+}
+
 .freelancers-card__image {
     margin-right: 32px;
+}
+
+.freelancers-card__name--online::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    border-radius: 19px;
+    background-color: #1DBF73;
+}
+
+.freelancers-card__name--offline::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    border-radius: 19px;
+    background-color: #B0AAD0;
 }
 
 .freelancer-card__info {
