@@ -281,7 +281,9 @@ mark {
 }
 
 .works__heading,
-.freelancers__heading {
+.freelancers__heading,
+.how-it-works__heading,
+.for-business__heading {
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -309,7 +311,8 @@ mark {
 }
 
 .works-card__heading,
-.freelancers-card__heading {
+.freelancers-card__heading,
+.algorithm__heading {
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -318,7 +321,8 @@ mark {
 }
 
 .works-card__description,
-.freelancers-card__description {
+.freelancers-card__description,
+.algorithm__description {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -423,4 +427,197 @@ mark {
     line-height: 17px;
     color: #222222;
     margin-bottom: 10px;
+}
+
+.how-it-works {
+    margin-bottom: 100px;
+}
+
+.how-it-works__heading {
+    margin-bottom: 20px;
+}
+
+.how-it-works__description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #222222;
+    margin-bottom: 50px;
+}
+
+.how-it-works__algorithm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.algorithm__item {
+    position: relative;
+    width: 400px;
+    padding-top: 100px;
+}
+
+.algorithm__heading {
+    margin-bottom: 20px;
+}
+
+.choose__heading::before {
+    content: url('../images/img-choose.svg');
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pay__heading::before {
+    content: url('../images/img-pay.svg');
+    position: absolute;
+    top: -7px;
+    left: 0;
+}
+
+.result__heading::before {
+    content: url('../images/img-result.svg');
+    position: absolute;
+    top: -17px;
+    left: 0;
+}
+
+.for-business {
+    background-image: url("../images/img-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 734px;
+    padding-top: 50px;
+}
+
+.for-business__heading {
+    color: #F6FAFD;
+    margin-bottom: 45px;
+}
+
+.for-business__wrapper {
+    position: relative;
+}
+
+.for-business__pay::before {
+    content: url('../images/img-credit-card.svg');
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.for-business__budjet::before {
+    content: url('../images/img-money.svg');
+    position: absolute;
+    left: 20px;
+    top: 140px;
+}
+
+.for-business__time::before {
+    content: url('../images/img-clock.svg');
+    position: absolute;
+    left: 20px;
+    top: 260px;
+}
+
+.white-cell {
+    width: 533px;
+    height: 90px;
+    background: #F6FAFD;
+    box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding-top: 37px;
+    padding-left: 100px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222222;
+}
+
+.for-business__time {
+    margin-bottom: 50px;
+}
+
+.for-business__text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #F6FAFD;
+    margin-bottom: 40px;
+}
+
+.for-business__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 221px;
+    height: 69px;
+    left: 300px;
+    top: 3464px;
+    background: #5E4EDB;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: #F6FAFD;
+}
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: #F2F0FE;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.footer__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: #222222;
+    margin-bottom: 30px;
+}
+
+.footer__categories-link,
+.footer__project-link,
+.footer__help-link {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222222;
+    margin-bottom: 10px;
+}
+
+.social-list {
+    display: flex;
+}
+
+.footer__social-link {
+    margin-right: 30px;
+}
+
+.footer__copyright {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #222222;
 }
