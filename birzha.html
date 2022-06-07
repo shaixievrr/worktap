@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Worktap</title>
+</head>
+
+<body>
+
+    <header class="header birzha-header">
+
+        <div class="container">
+
+            <div class="header__wrapper">
+
+                <div class="header__logo">
+                    <a class="header__logo-link" href="index.html">
+                        <img src="images/header-logo.png" width="195px" alt="Worktap">
+                    </a>
+                </div>
+
+                <nav class="header__navigation">
+                    <ul class="header__navigation nav-list">
+                        <li class="nav-list__item"><a href="#">Биржа</a></li>
+                        <li class="nav-list__item"><a href="#">Ворки</a></li>
+                        <li class="nav-list__item"><a href="#">Конкурсы</a></li>
+                        <li class="nav-list__item"><a href="#">Создать заказ</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__user">
+                    <div class="header__user-icons">
+                        <button class="header__user-star header__user-button">
+                            <img src="images/icon_header-star.svg" alt="star">
+                        </button>
+                        <button class="header__user-bell header__user-button">
+                            <img src="images/icon_header-bell.svg" alt="star">
+                        </button>
+                        <button class="header__user-message header__user-button">
+                            <img src="images/icon_header-message.svg" alt="star">
+                        </button>
+                    </div>
+                    <div class="header__user-wrapper">
+                        <p class="header__user-name">Ернар Ибрагимов</p>
+                        <img class="header__user-photo" src="images/img_header-user-photo.png" alt="Photo">
+                        <select class="header__user-menu" name="user-menu" id="">
+                        <option value="1"> </option>
+                        <option value="2">Второй</option>
+                        <option value="3">Третий</option>
+                    </select>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="birzha">
+
+        <section class="birzha-searching">
+            <div class="container">
+                <div class="birzha-wrapper">
+                    <h1 class="birzha-searching__heading">Ищите и находите подходящую работу среди <mark>10,000+</mark> проектов и покажите на что Вы способны!</h1>
+                    <form class="birzha-searching__form birzha-form">
+                        <div class="birzha-form__searching">
+                            <input class="birzha-form__searching-text" type="text" placeholder="Какую работу ищете?">
+                            <input class="birzha-form__searching-button" type="button" value="Найти">
+                        </div>
+                        <fieldset class="birzha-form__filter birzha-filter">
+
+                            <div class="birzha-filter__text">
+                                <input class="birzha-filter__checkbox" type="checkbox" id="text" name="text">
+                                <label class="birzha-filter__label" for="text">Тексты и переводы</label>
+                            </div>
+
+                            <div class="birzha-filter__development">
+                                <input class="birzha-filter__checkbox" type="checkbox" id="development" name="development">
+                                <label class="birzha-filter__label" for="development">Разработка</label>
+                            </div>
+
+                            <div class="birzha-filter__design">
+                                <input class="birzha-filter__checkbox" type="checkbox" id="design" name="design">
+                                <label class="birzha-filter__label" for="design">Дизайн</label>
+                            </div>
+
+                            <div class="birzha-filter__va-editing">
+                                <input class="birzha-filter__checkbox" type="checkbox" id="va-editing" name="va-editing">
+                                <label class="birzha-filter__label" for="va-editing">Аудио, видео монтаж</label>
+                            </div>
+
+                            <div class="birzha-filter__seo">
+                                <input class="birzha-filter__checkbox" type="checkbox" id="SEO" name="SEO">
+                                <label class="birzha-filter__label" for="SEO">SEO и оптимизация</label>
+                            </div>
+
+                            <div class="birzha-filter__business">
+                                <input class="birzha-filter__checkbox" type="checkbox" id="business" name="business">
+                                <label class="birzha-filter__label" for="business">Бизнес и жизнь</label>
+                            </div>
+
+                            <div class="birzha-filter__social">
+                                <input class="birzha-filter__checkbox" type="checkbox" id="social" name="social">
+                                <label class="birzha-filter__label" for="social">Соцсети и реклама</label>
+                            </div>
+
+                            <input class="birzha-filter__button" type="button" value="Все категории">
+
+                        </fieldset>
+                    </form>
+                    <div class="birzha__all-orders-btn">
+                        <button class="birzha__all-orders">Ниже все заказы по <mark>дизайну</mark></button>
+                        <button class="birzha__all-orders-arrow">
+                            <img src="images/icon_all-orders-btn.svg" alt="down-arrow">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="birzha__birzha-result birzha-result">
+            <div class="container">
+
+                <div class="birzha-result__header">
+                    <p class="birzha-result__header-projects">65 проектов по дизайну</p>
+                    <form class="birzha-result__header-form" action="">
+                        <input type="text" placeholder="Минимальная цена">
+                        <input type="text" placeholder="Максимальная цена">
+                        <select name="price-filter" id="">
+                        <option value="1">По возростанию цены</option>
+                    </select>
+                    </form>
+                </div>
+
+                <ul class="birzha-rezult">
+                    <li class="birzha-rezult__item order-card">
+                        <div class="order-card__wrapper">
+                            <div class="order-card__customer-wrapper">
+                                <p class="order-card__title">Нужно сделать Дизайн сайта по тематике авто</p>
+                                <div class="order-card__customer">
+                                    <img class="order-card__image" src="images/img-top-freelancer1.png" width="120px" alt="photo">
+                                    <div class="order-card__info">
+                                        <p class="order-card__name">Екатерина Ивановаа</p>
+                                        <p class="order-card__projects-done">Размещено проектов на бирже: 25</p>
+                                        <div class="order-card__statistics">
+                                            <div class="order-card__rank rank">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-empty_star.svg" alt="+-">
+                                            </div>
+                                            <span class="order-card__comments">15 отзывов</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-card__data">
+                                <p class="order-card__data-budjet">Бюджет: 50 000 тенге</p>
+                                <p class="order-card__data-time">4 часа 28 минут назад</p>
+                                <p class="order-card__data-offer">Предложений: 50</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="birzha-rezult__item order-card">
+                        <div class="order-card__wrapper">
+                            <div class="order-card__customer-wrapper">
+                                <p class="order-card__title">Нужно сделать Дизайн сайта по тематике авто</p>
+                                <div class="order-card__customer">
+                                    <img class="order-card__image" src="images/img-top-freelancer1.png" width="120px" alt="photo">
+                                    <div class="order-card__info">
+                                        <p class="order-card__name">Екатерина Ивановаа</p>
+                                        <p class="order-card__projects-done">Размещено проектов на бирже: 25</p>
+                                        <div class="order-card__statistics">
+                                            <div class="order-card__rank rank">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-empty_star.svg" alt="+-">
+                                            </div>
+                                            <span class="order-card__comments">15 отзывов</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-card__data">
+                                <p class="order-card__data-budjet">Бюджет: 50 000 тенге</p>
+                                <p class="order-card__data-time">4 часа 28 минут назад</p>
+                                <p class="order-card__data-offer">Предложений: 50</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="birzha-rezult__item order-card">
+                        <div class="order-card__wrapper">
+                            <div class="order-card__customer-wrapper">
+                                <p class="order-card__title">Нужно сделать Дизайн сайта по тематике авто</p>
+                                <div class="order-card__customer">
+                                    <img class="order-card__image" src="images/img-top-freelancer1.png" width="120px" alt="photo">
+                                    <div class="order-card__info">
+                                        <p class="order-card__name">Екатерина Ивановаа</p>
+                                        <p class="order-card__projects-done">Размещено проектов на бирже: 25</p>
+                                        <div class="order-card__statistics">
+                                            <div class="order-card__rank rank">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-empty_star.svg" alt="+-">
+                                            </div>
+                                            <span class="order-card__comments">15 отзывов</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-card__data">
+                                <p class="order-card__data-budjet">Бюджет: 50 000 тенге</p>
+                                <p class="order-card__data-time">4 часа 28 минут назад</p>
+                                <p class="order-card__data-offer">Предложений: 50</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="birzha-rezult__item order-card">
+                        <div class="order-card__wrapper">
+                            <div class="order-card__customer-wrapper">
+                                <p class="order-card__title">Нужно сделать Дизайн сайта по тематике авто</p>
+                                <div class="order-card__customer">
+                                    <img class="order-card__image" src="images/img-top-freelancer1.png" width="120px" alt="photo">
+                                    <div class="order-card__info">
+                                        <p class="order-card__name">Екатерина Ивановаа</p>
+                                        <p class="order-card__projects-done">Размещено проектов на бирже: 25</p>
+                                        <div class="order-card__statistics">
+                                            <div class="order-card__rank rank">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-empty_star.svg" alt="+-">
+                                            </div>
+                                            <span class="order-card__comments">15 отзывов</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-card__data">
+                                <p class="order-card__data-budjet">Бюджет: 50 000 тенге</p>
+                                <p class="order-card__data-time">4 часа 28 минут назад</p>
+                                <p class="order-card__data-offer">Предложений: 50</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="birzha-rezult__item order-card">
+                        <div class="order-card__wrapper">
+                            <div class="order-card__customer-wrapper">
+                                <p class="order-card__title">Нужно сделать Дизайн сайта по тематике авто</p>
+                                <div class="order-card__customer">
+                                    <img class="order-card__image" src="images/img-top-freelancer1.png" width="120px" alt="photo">
+                                    <div class="order-card__info">
+                                        <p class="order-card__name">Екатерина Ивановаа</p>
+                                        <p class="order-card__projects-done">Размещено проектов на бирже: 25</p>
+                                        <div class="order-card__statistics">
+                                            <div class="order-card__rank rank">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-empty_star.svg" alt="+-">
+                                            </div>
+                                            <span class="order-card__comments">15 отзывов</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-card__data">
+                                <p class="order-card__data-budjet">Бюджет: 50 000 тенге</p>
+                                <p class="order-card__data-time">4 часа 28 минут назад</p>
+                                <p class="order-card__data-offer">Предложений: 50</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="birzha-rezult__item order-card">
+                        <div class="order-card__wrapper">
+                            <div class="order-card__customer-wrapper">
+                                <p class="order-card__title">Нужно сделать Дизайн сайта по тематике авто</p>
+                                <div class="order-card__customer">
+                                    <img class="order-card__image" src="images/img-top-freelancer1.png" width="120px" alt="photo">
+                                    <div class="order-card__info">
+                                        <p class="order-card__name">Екатерина Ивановаа</p>
+                                        <p class="order-card__projects-done">Размещено проектов на бирже: 25</p>
+                                        <div class="order-card__statistics">
+                                            <div class="order-card__rank rank">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-empty_star.svg" alt="+-">
+                                            </div>
+                                            <span class="order-card__comments">15 отзывов</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-card__data">
+                                <p class="order-card__data-budjet">Бюджет: 50 000 тенге</p>
+                                <p class="order-card__data-time">4 часа 28 минут назад</p>
+                                <p class="order-card__data-offer">Предложений: 50</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="birzha-rezult__item order-card">
+                        <div class="order-card__wrapper">
+                            <div class="order-card__customer-wrapper">
+                                <p class="order-card__title">Нужно сделать Дизайн сайта по тематике авто</p>
+                                <div class="order-card__customer">
+                                    <img class="order-card__image" src="images/img-top-freelancer1.png" width="120px" alt="photo">
+                                    <div class="order-card__info">
+                                        <p class="order-card__name">Екатерина Ивановаа</p>
+                                        <p class="order-card__projects-done">Размещено проектов на бирже: 25</p>
+                                        <div class="order-card__statistics">
+                                            <div class="order-card__rank rank">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-empty_star.svg" alt="+-">
+                                            </div>
+                                            <span class="order-card__comments">15 отзывов</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-card__data">
+                                <p class="order-card__data-budjet">Бюджет: 50 000 тенге</p>
+                                <p class="order-card__data-time">4 часа 28 минут назад</p>
+                                <p class="order-card__data-offer">Предложений: 50</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="birzha-rezult__item order-card">
+                        <div class="order-card__wrapper">
+                            <div class="order-card__customer-wrapper">
+                                <p class="order-card__title">Нужно сделать Дизайн сайта по тематике авто</p>
+                                <div class="order-card__customer">
+                                    <img class="order-card__image" src="images/img-top-freelancer1.png" width="120px" alt="photo">
+                                    <div class="order-card__info">
+                                        <p class="order-card__name">Екатерина Ивановаа</p>
+                                        <p class="order-card__projects-done">Размещено проектов на бирже: 25</p>
+                                        <div class="order-card__statistics">
+                                            <div class="order-card__rank rank">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-empty_star.svg" alt="+-">
+                                            </div>
+                                            <span class="order-card__comments">15 отзывов</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-card__data">
+                                <p class="order-card__data-budjet">Бюджет: 50 000 тенге</p>
+                                <p class="order-card__data-time">4 часа 28 минут назад</p>
+                                <p class="order-card__data-offer">Предложений: 50</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="birzha-rezult__item order-card">
+                        <div class="order-card__wrapper">
+                            <div class="order-card__customer-wrapper">
+                                <p class="order-card__title">Нужно сделать Дизайн сайта по тематике авто</p>
+                                <div class="order-card__customer">
+                                    <img class="order-card__image" src="images/img-top-freelancer1.png" width="120px" alt="photo">
+                                    <div class="order-card__info">
+                                        <p class="order-card__name">Екатерина Ивановаа</p>
+                                        <p class="order-card__projects-done">Размещено проектов на бирже: 25</p>
+                                        <div class="order-card__statistics">
+                                            <div class="order-card__rank rank">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-star.svg" alt="+">
+                                                <img class="rank__star" src="images/img-empty_star.svg" alt="+-">
+                                            </div>
+                                            <span class="order-card__comments">15 отзывов</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-card__data">
+                                <p class="order-card__data-budjet">Бюджет: 50 000 тенге</p>
+                                <p class="order-card__data-time">4 часа 28 минут назад</p>
+                                <p class="order-card__data-offer">Предложений: 50</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="birzha-rezult__more-button">Загрузить ещё</div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer__wrapper">
+
+                <div class="footer__categories">
+                    <p class="footer__title">Топ категории</p>
+                    <ul class="footer__categories-list categories-list">
+                        <li class="categories-list__item">
+                            <a class="footer__categories-link" href="#">Тексты и переводы</a>
+                        </li>
+                        <li class="categories-list__item">
+                            <a class="footer__categories-link" href="#">Разработка</a>
+                        </li>
+                        <li class="categories-list__item">
+                            <a class="footer__categories-link" href="#">Дизайн</a>
+                        </li>
+                        <li class="categories-list__item">
+                            <a class="footer__categories-link" href="#">Аудио, видео монтаж</a>
+                        </li>
+                        <li class="categories-list__item">
+                            <a class="footer__categories-link" href="#">Соцсети и реклама</a>
+                        </li>
+                        <li class="categories-list__item">
+                            <a class="footer__categories-link" href="#">Бизнес и жизнь</a>
+                        </li>
+                        <li class="categories-list__item">
+                            <a class="footer__categories-link" href="#">SEO и оптимизация</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__project">
+                    <p class="footer__title">О проекте</p>
+                    <ul class="footer__project-list project-list">
+                        <li class="project-list__item">
+                            <a class="footer__project-link" href="#">О Нас</a>
+                        </li>
+                        <li class="project-list__item">
+                            <a class="footer__project-link" href="#">Как Это Работает</a>
+                        </li>
+                        <li class="project-list__item">
+                            <a class="footer__project-link" href="#">Политика Приватности</a>
+                        </li>
+                        <li class="project-list__item">
+                            <a class="footer__project-link" href="#">Правила Пользования </a>
+                        </li>
+                        <li class="project-list__item">
+                            <a class="footer__project-link" href="#">Пресса о нас</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__help">
+                    <p class="footer__title">Поддержка</p>
+                    <ul class="footer__help-list help-list">
+                        <li class="help-list__item">
+                            <a class="footer__help-link" href="#">Контакты</a>
+                        </li>
+                        <li class="help-list__item">
+                            <a class="footer__help-link" href="#">Политика Безопасности</a>
+                        </li>
+                        <li class="help-list__item">
+                            <a class="footer__help-link" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__social">
+                    <p class="footer__title">Follow</p>
+                    <ul class="footer__social-list social-list">
+                        <li class="social-list__item">
+                            <a class="footer__social-link" href="#">
+                                <img src="images/icon-facebook.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a class="footer__social-link" href="#">
+                                <img src="images/icon-twitter.svg" alt="twitter">
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a class="footer__social-link" href="#">
+                                <img src="images/icon-instagram.svg" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a class="footer__social-link" href="#">
+                                <img src="images/icon-linkedin.svg" alt="linkedin">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <p class="footer__copyright">Copyright @ 2021 | WorkTap – Worktap.KZ. All Rights Reserved</p>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

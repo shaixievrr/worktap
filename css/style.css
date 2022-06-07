@@ -17,6 +17,7 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: #F6FAFD;
 }
 
 a {
@@ -118,7 +119,8 @@ ul {
     width: 596px;
 }
 
-.first-screen__heading {
+.first-screen__heading,
+.birzha-searching__heading {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -148,12 +150,14 @@ mark {
     position: relative;
 }
 
-.main-form__searching {
+.main-form__searching,
+.birzha-form__searching {
     position: relative;
     margin-bottom: 50px;
 }
 
-.main-form__searching-text {
+.main-form__searching-text,
+.birzha-form__searching-text {
     width: 532px;
     height: 60px;
     background: #F2F0FE;
@@ -163,7 +167,8 @@ mark {
     padding-left: 19px;
 }
 
-.main-form__searching-text::placeholder {
+.main-form__searching-text::placeholder,
+.birzha-form__searching-text::placeholder {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -172,7 +177,8 @@ mark {
     color: #656084;
 }
 
-.main-form__searching-button {
+.main-form__searching-button,
+.birzha-form__searching-button {
     position: absolute;
     right: 0;
     width: 154px;
@@ -187,7 +193,8 @@ mark {
     color: #F6FAFD;
 }
 
-.main-filter {
+.main-filter,
+.birzha-filter {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -203,19 +210,22 @@ mark {
     margin-bottom: 30px;
 }
 
-.main-filter__checkbox {
+.main-filter__checkbox,
+.birzha-filter__checkbox {
     position: absolute;
     z-index: -1;
     opacity: 0;
 }
 
-.main-filter__checkbox:checked+label {
+.main-filter__checkbox:checked+label,
+.birzha-filter__checkbox:checked+label {
     color: #1DBF73;
     font-weight: 600;
     border-color: #1DBF73;
 }
 
-.main-filter__label {
+.main-filter__label,
+.birzha-filter__label {
     display: block;
     cursor: pointer;
     padding: 10px 20px;
@@ -362,6 +372,9 @@ mark {
     color: #1DBF73;
 }
 
+
+/* ----------freelancers---------- */
+
 .freelancers {
     margin: 100px;
 }
@@ -429,6 +442,9 @@ mark {
     margin-bottom: 10px;
 }
 
+
+/* ----------how it works---------- */
+
 .how-it-works {
     margin-bottom: 100px;
 }
@@ -482,6 +498,9 @@ mark {
     top: -17px;
     left: 0;
 }
+
+
+/* ----------for-business---------- */
 
 .for-business {
     background-image: url("../images/img-background.jpg");
@@ -570,6 +589,9 @@ mark {
     color: #F6FAFD;
 }
 
+
+/* ----------footer---------- */
+
 .footer {
     padding-top: 50px;
     padding-bottom: 100px;
@@ -620,4 +642,297 @@ mark {
     line-height: 20px;
     letter-spacing: 0.02em;
     color: #222222;
+}
+
+
+/* ----------birzha-page---------- */
+
+.birzha-header {
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+.birzha-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__user-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 135px;
+}
+
+.header__user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 470px;
+}
+
+.header__user-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 290px;
+}
+
+.header__user-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.header__user-menu {
+    width: 20px;
+    appearance: none;
+    border-style: none;
+    overflow: hidden;
+    background: url('../images/icon_header-user-menu.svg') no-repeat right;
+    cursor: pointer;
+}
+
+.birzha-searching {
+    padding-top: 160px;
+    background: #F7F6FF;
+    padding-bottom: 170px;
+}
+
+.birzha-searching__heading {
+    width: 1050px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.birzha-form__searching {
+    margin-bottom: 45px;
+}
+
+.birzha-filter {
+    width: 750px;
+    justify-content: center;
+}
+
+.birzha-filter__button {
+    padding: 10px 20px;
+    border: 1px solid #FBA457;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FBA457;
+    background: none;
+    margin-bottom: 20px;
+}
+
+.birzha-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.birzha__all-orders-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.birzha__all-orders,
+.birzha__all-orders-arrow,
+.header__user-button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.birzha__all-orders {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+.birzha-result {
+    padding-top: 60px;
+}
+
+.birzha-result__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.birzha-result__header-projects {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+}
+
+.birzha-result__header-form input {
+    width: 195px;
+    height: 42px;
+    padding-left: 26px;
+    border: 1px solid #F2F0FE;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-right: 30px;
+    background-color: transparent;
+}
+
+.birzha-result__header-form select {
+    width: 270px;
+    height: 42px;
+    padding-left: 26px;
+    padding-right: 26px;
+    border: 1px solid #F2F0FE;
+    border-radius: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 45px;
+    background-color: transparent;
+}
+
+.birzha-result__header-projects::before {
+    content: url('..//images/icon_defis.svg');
+    position: absolute;
+    right: 554px;
+    bottom: 14px;
+}
+
+.birzha-rezult__more-button {
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1DBF73;
+    width: 238px;
+    height: 54px;
+    padding: 16px 18px;
+    border: 1px solid #1DBF73;
+    border-radius: 40px;
+    text-align: center;
+    margin: 0 auto 60px;
+}
+
+.order-card {
+    padding: 20px;
+    background: #F6FAFD;
+    border: 1px solid #F2F0FE;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.order-card:hover {
+    box-shadow: 0px 16px 16px rgba(34, 34, 34, 0.04);
+    cursor: pointer;
+}
+
+.order-card__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+}
+
+.order-card__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-card__customer-wrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.order-card__customer {
+    display: flex;
+    align-items: center;
+}
+
+.order-card__image {
+    margin-right: 20px;
+}
+
+.order-card__name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 12px;
+}
+
+.order-card__projects-done {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 12px;
+}
+
+
+/* .order-card__statistics {
+    align-items: center;
+} */
+
+.order-card__rank {
+    display: inline-block;
+    margin-right: 23px;
+}
+
+.order-card__comments {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.order-card__data {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-card__data-budjet {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    color: #1DBF73;
+    margin-bottom: 10px;
+}
+
+.order-card__data-time {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    color: #656084;
+    margin-bottom: 90px;
+}
+
+.order-card__data-offer {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    color: #656084;
 }
