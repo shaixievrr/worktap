@@ -698,6 +698,7 @@ mark {
     padding-top: 160px;
     background: #F7F6FF;
     padding-bottom: 170px;
+    position: relative;
 }
 
 .birzha-searching__heading {
@@ -935,4 +936,26 @@ mark {
     line-height: 22px;
     text-align: right;
     color: #656084;
+}
+.circle{
+    position: absolute;
+}
+.circle-1{
+    left:109px;
+}
+.circle-2{
+    lefT:45%;
+    top:0;
+}
+.circle-3{
+    left: 80%;
+    top:60px;
+}
+.circle-4{
+    bottom:114px;
+    left:40%;
+}
+.circle-5{
+    bottom:114px;
+    left:80%;
 }
